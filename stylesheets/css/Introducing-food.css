@@ -1,0 +1,33 @@
+.intro-food-img {
+  width: 460px;
+  height: 460px;
+}
+
+@media (min-width: 768px) {
+  .img-Crossing-block {
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+}
+
+.text-line-height p {
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .intro-food-text-straight p {
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+  }
+  .text-line-height p {
+    text-align: justify;
+    line-height: 3.5;
+  }
+}
+
+.intro-food-text-img img {
+  height: 327px;
+  width: 89px;
+}
+/*# sourceMappingURL=Introducing-food.css.map */

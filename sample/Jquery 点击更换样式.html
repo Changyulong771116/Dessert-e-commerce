@@ -1,0 +1,54 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</head>
+<style>
+.nav {
+    width:35px;
+    height:35px;
+    line-height: 35px;
+    text-align: center;
+    border:1px solid #7B7B7B;
+    float:left;
+}
+.content{
+    width:100;
+    margin:0 auto;
+ }
+
+#tip{
+    width:200px;
+ }
+
+.m{
+    background-color: #0066cc;
+}
+
+</style>
+<body>
+<div class ="content">
+<div id = "tip">
+<div class = "nav">1</div><div class = "nav">2</div><div class = "nav">3</div><div class = "nav">4</div><div class = "nav">5</div>
+<button style = "width:65px; height:30px; margin-top: 20px;margin-left: 50px;">提交</button>
+</div>
+</div>
+
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".nav").click(function(){
+    $(this).addClass('m').siblings().removeClass('m');
+    });
+
+    $('button').click(function(){
+        var val = $('.m').text();
+        alert(val);
+    });
+});
+</script>
+</html>
+--------------------- 
+作者：Allen__Li 
+来源：CSDN 
+原文：https://blog.csdn.net/qq_21784985/article/details/77347713 
+版权声明：本文为博主原创文章，转载请附上博文链接！

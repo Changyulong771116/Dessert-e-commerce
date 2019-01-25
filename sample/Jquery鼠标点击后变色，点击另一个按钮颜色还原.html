@@ -1,0 +1,32 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+$(function(){
+  $("#nav li").click(function(){
+    $("#nav li").eq($(this).index()).addClass("navdown").siblings().removeClass("navdown");
+  })
+})
+</script>
+<style>
+a{text-decoration:none; color:#666666; color: blue;}
+#nav ul{ list-style:none; float:left; text-align:right; margin-top: 18px; line-height: 42px; margin-left: -2px; }
+#nav ul li{ font-family:"微软雅黑","宋体"; font-size:14px; font-style:normal; font-weight:bold; letter-spacing:4px; }
+#nav ul li a:hover{ color:#666666;border:1px solid #F00;}
+.navdown a{background-color: #F00; color:#ff0000; border:1px solid #F00;}
+</style>
+<body>
+   <div id="nav">
+      <ul>
+ <li class="navdown"><a href="#"><span>网站首页</span></a></li>
+          <li><a href="#"><span>关于我们</span></a></li>
+ <li><a href="#"><span>新闻资讯</span></a></li>
+ <li><a href="#"><span>产品展示</span></a></li>
+ <li><a href="#"><span>客户案列</span></a></li>
+ <li><a href="#"><span>联系我们</span></a></li>
+ </ul>
+   </div>
+</body>
+--------------------- 
+作者：雨轩_wscrf 
+来源：CSDN 
+原文：https://blog.csdn.net/wscrf/article/details/73188771 
+版权声明：本文为博主原创文章，转载请附上博文链接！

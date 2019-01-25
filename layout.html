@@ -1,0 +1,135 @@
+<!--新創index.html https://bootstrap.hexschool.com/docs/4.1/getting-started/download/#npm ctrl+` 輸入 npm install bootstrap 用官網下載的也是可以-->
+<!-- VScode安裝兩個套件 Live Sass Compiler ， Live Server -->
+<!-- 按下Go Live 會跑到網頁看結果 -->
+<!-- https://github.com/twbs/bootstrap 知識庫 scss看自己需要甚麼就載甚麼，重下讀到上!!
+    bootstrap-grid.scss，bootstrap-reboot.scss，bootstrap.scss這三個檔案先讀
+     _variables.scss非常重要，可以修改變數變成自己的 
+    _utilities.scss 通用類別，以上的都是bootstrap排版,內容及元件-->
+<!-- mixins產生元件的方法 強烈建議用自己的開發元件 (_variables.scss) -->
+
+<!--20180115 1.先看過文件搞設定顏色 2.設定間距 3.圖片能不能使用 4.文字大小變化有哪些字體font-size 5.可以利用的原件 6.設計稿上跟執行端問題的話須溝通協調 目前看到46:09秒 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/favicon_48.ico">
+    <meta name="description" content="甜品電商，甜到吃手手" />
+    <meta name="googleKeyword" content="蛋糕、甜品、甜甜圈" />
+
+    <meta property="og:title" content="甜品電商，甜到吃手手，胖到踩腳腳" />
+    <meta property="og:description" content="各式各樣新式甜品，讓你說話嘴巴甜甜" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image" content="images/logo-all-dark.svg" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>甜品電商 - 首頁</title>
+</head>
+
+<body>
+    <header>
+        <!-- 至_variables.scss修改 $navbar-padding-y:30px;調整上下間距 $navbar-nav-link-padding-x:30px;調整按鈕左右間距 -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <!-- https://bootstrap.hexschool.com/docs/4.1/layout/grid/#grid-options  目前size 是最大的-->
+            <!-- 去codpen搜尋steps https://codepen.io/search/pens?q=steps&page=1&order=popularity&depth=everything&show_forks=on  流程進度圖-->
+            <!-- components 自己新增的元件資料夾EX:_自己命名的名稱裡面的功能也要自己寫 -->
+            <div class="container position-father">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand m-auto" href="#">
+                    <img src="images/logo-all-dark.svg" height="40" alt="" class="d-none d-md-inline-block">
+                    <img src="images/logotype-lg-dark.svg" height="18" alt="" class="d-inline-block d-md-none my-auto">
+                </a>
+                <div class="collapse navbar-collapse text-tea font-weight-bold" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mt-2 mt-lg-0 position-header-text pr-5">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">甜點</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">登入</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pl-8 position-shopping-cart order-md-1 d-flex align-items-center">
+                    <a class="navbar-brand" href="#"><a href="#"><i class="fa fa-shopping-cart fa-lg text-Matcha"
+                                aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要內容篇及區塊 -->
+    <main class="main">
+        
+    </main>
+
+    <section class="py-5 bg-Matcha">
+        <div class="container">
+            <div class="row d-flex row justify-content-center">
+                <div class="col-md-5 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0">
+                    <img src="images/logo-light.svg" height="40" alt="">
+                    <span class="mx-3 h4 mb-0 pb-0 text-milk">訂閱你我的甜蜜郵件</span>
+                </div>
+                <div class="col-md-5 d-flex justify-content-between">
+                    <div class="input-group form-area form-area-jum bg-milk">
+                        <label for="subscription"><i class="fa fa-envelope form-email fa-lg bg-milk text-Matcha"></i></label>
+                        <input type="email" class="form-input form-control w-100" aria-label="Recipient's username"
+                            aria-describedby="basic-addon2" id="subscription">
+                        <button class="btn btn-accent form-btn" type="button"><i class="fa fa-arrow-right fa-lg text-Matcha"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="py-4 bg-milk">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-5">
+                    <div>
+                        <img src="images/logotype-sm-dark.svg" alt="" height="27">
+                    </div>
+                    <ul class="footer-list mt-21 text-Matcha font-weight-bold">
+                        <li>02-2997-XXXX</li>
+                        <li>changyulong1431@gmail.com</li>
+                        <li>242 新北市新莊區中華路二段</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 text-right d-none d-md-block">
+                    <img src="images/sm-今天是個吃甜點的好日子.svg" alt="" width="60">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-5">
+                    <img src="images/ic-line@.svg" alt="" height="32">
+                    <img src="images/ic-facebook.svg" alt="" height="32">
+                </div>
+                <div class="col-md-5 text-md-right mt-3">
+                    <span>© 2018 Sweetaste* All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascripts/vendor.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function () {
+            $("#nav a").click(function () {
+                $("#nav a").eq($(this).index()).addClass("navdown").siblings().removeClass("navdown");
+            })
+        })
+    </script>
+</body>
+
+</html>

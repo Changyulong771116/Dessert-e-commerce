@@ -1,0 +1,19 @@
+// what Sass (Live Sass Compiler) 右下角按下去 會出現 all.css 跟 all.css.map檔案，all.css.map可以先不理他
+// https://bootstrap.hexschool.com/docs/4.1/getting-started/theming/#importing
+// @import "../node_modules/bootstrap/scss/bootstrap"; // ../上層路徑
+// 要按下what Sass 檔案裡的all.css 才會改變 
+
+// Live Sass編譯出來檔案可以做設定 All settings are now listed here [Settings Docs]↓.
+//  https://github.com/ritwickdey/vscode-live-sass-compiler/blob/master/docs/settings.md
+// 自訂一客製化
+// https://bootstrap.hexschool.com/docs/4.1/getting-started/theming/#importing
+@import "../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+// 如果結果初步來請看Ctrl + ` 請看output
+
+// 自訂元件
+@import "./components/layout";
+@import "./components/header";
+@import "./components/Introducing-food";
+@import "./components/Purchase-list";

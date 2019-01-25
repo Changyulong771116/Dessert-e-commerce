@@ -1,0 +1,68 @@
+// index introducing food area
+// index introducing food img
+$basePX:10px;
+
+@function padding($count:1){
+    @return $basePX * $count
+}
+
+
+
+@mixin intro-food-img{
+    width: 460px;
+    height: 460px;
+}
+
+@mixin img-Crossing-block {
+    margin-top: - padding(2);
+    margin-bottom: - padding(2);
+}
+
+.intro-food-img{
+    @include intro-food-img;
+}
+
+@media(min-width: 768px){
+    .img-Crossing-block{
+     @include img-Crossing-block
+    }  
+}
+
+// text-straight use @mixin method.
+
+
+@mixin text-straight{
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+   
+}
+
+.text-line-height p{
+    line-height: 2;
+}
+
+
+@media (min-width: 768px) { 
+
+.intro-food-text-straight p{
+    @include text-straight;
+}
+
+.text-line-height p{
+    text-align:justify;
+    line-height: 3.5;
+}
+}
+
+
+
+// index intorducing food text img use @extend method.
+%intor-text-img {
+    height: 327px;
+    width: 89px;
+}
+
+.intro-food-text-img img{
+    @extend %intor-text-img
+}
+

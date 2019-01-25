@@ -1,0 +1,45 @@
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
+.purchase-list-img {
+  height: 315px;
+}
+
+.list-card-body {
+  border: 1px solid #EAF0ED;
+  font-size: 20px;
+}
+
+.card {
+  position: relative;
+}
+
+.text-straight {
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  padding: 10px;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.list-card-icon {
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  z-index: 2;
+  font-size: 20px;
+}
+
+.list-card-icon:focus {
+  background-color: #ffffff;
+}
+
+.heart-size {
+  width: 25px;
+}
+/*# sourceMappingURL=Purchase-list.css.map */

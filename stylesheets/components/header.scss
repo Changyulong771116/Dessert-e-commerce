@@ -1,0 +1,97 @@
+/* index main jum*/
+@mixin bg-cover {
+    background-position: center center;
+    background-size: cover;
+}
+
+.index-header-image{
+    height: 496px;
+    z-index: 2;
+}
+
+.bg-cover{
+    @include bg-cover;
+   }
+
+.index-header-smallimages{
+    height: 260px;
+    width: 260px;
+    position: relative;
+}
+
+.samll-jum{
+    margin-top:-90px;
+}
+
+.index-header-border{
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+}
+
+// index main samll jum
+@mixin son-expansion {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.list-group{
+    flex-direction:row;
+}
+.list-group-item{
+    padding: 0;
+}
+
+.smalljum-side{
+    @include son-expansion;
+    z-index: 0;
+    background-color: transparent;
+}
+
+.rectangle-cover{
+    @include son-expansion;
+    z-index: 1;
+    background-color: rgba(63, 93, 69, 0.8);
+    font-size: 24px;
+    font-weight: bold;
+    
+    &.active, &:hover, &:focus {
+        background-color: rgba(255, 225, 128, 0.8); 
+        color: rgba(63, 93, 69, 0.8) !important;
+        font-weight: bold;
+        transition: all 1s;
+    }
+
+    
+    
+}
+// <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+// <script>
+//        $(function(){
+//           $("#nav a").click(function(){
+//             $("#nav a").eq($(this).index()).addClass("navdown").siblings().removeClass("navdown");
+//           })
+//         })
+
+// </script>
+// 以上為啟動前先載入元件，使用jquery，取出in="nav" 裡面的a ，針對class="navdown" 裡面的div點擊動作移除或新增class="navdown"名稱
+/* 
+<div class="row no-gutters samll-jum" id="nav">
+                               
+<a href="#" class="col-4 index-header-smallimages navdown">   
+    <div class="rectangle-cover h-100 d-flex align-items-center justify-content-center text-light">  <span>本 <br> 日 <br>精 <br>選</span> </div>
+    <div class="bg-cover h-100 smalljum-side" style="background-image:url(https://images.unsplash.com/photo-1504855101244-34edfbd4b861?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=652&q=80)">
+        </div>
+</a>
+</div>
+*/
+.navdown div{
+
+        background-color: rgba(255, 225, 128, 0.8); 
+        color: rgba(63, 93, 69, 0.8) !important;
+        font-weight: bold;
+        transition: all 1s;
+    
+}

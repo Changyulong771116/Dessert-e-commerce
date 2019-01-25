@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* index main jum*/
+.index-header-image {
+  height: 496px;
+  z-index: 2;
+}
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
+.index-header-smallimages {
+  height: 260px;
+  width: 260px;
+  position: relative;
+}
+
+.samll-jum {
+  margin-top: -90px;
+}
+
+.index-header-border {
+  border-left: 1px solid #EAF0ED;
+  border-right: 1px solid #EAF0ED;
+}
+
+.list-group {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.list-group-item {
+  padding: 0;
+}
+
+.smalljum-side {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  background-color: transparent;
+}
+
+.rectangle-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(63, 93, 69, 0.8);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.rectangle-cover.active, .rectangle-cover:hover, .rectangle-cover:focus {
+  background-color: rgba(255, 225, 128, 0.8);
+  color: rgba(63, 93, 69, 0.8) !important;
+  font-weight: bold;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+/* 
+<div class="row no-gutters samll-jum" id="nav">
+                               
+<a href="#" class="col-4 index-header-smallimages navdown">   
+    <div class="rectangle-cover h-100 d-flex align-items-center justify-content-center text-light">  <span>本 <br> 日 <br>精 <br>選</span> </div>
+    <div class="bg-cover h-100 smalljum-side" style="background-image:url(https://images.unsplash.com/photo-1504855101244-34edfbd4b861?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=652&q=80)">
+        </div>
+</a>
+</div>
+*/
+.navdown div {
+  background-color: rgba(255, 225, 128, 0.8);
+  color: rgba(63, 93, 69, 0.8) !important;
+  font-weight: bold;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/*# sourceMappingURL=header.css.map */

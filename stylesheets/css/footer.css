@@ -1,0 +1,26 @@
+/* index main jum*/
+.index-header-image {
+  height: 496px;
+}
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
+.index-header-smallimages {
+  height: 260px;
+  width: 260px;
+}
+
+.samll-jum {
+  margin-top: -90px;
+}
+
+.list-group {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=footer.css.map */

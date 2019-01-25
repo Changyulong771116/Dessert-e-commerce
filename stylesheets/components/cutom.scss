@@ -1,0 +1,68 @@
+/* layout.html */
+/*navbar 調整購物車固定右方 */
+.position-father {
+    position: relative;
+}
+
+.position-shopping-cart{
+    position: absolute;
+    right:20px;
+    top: 13px;
+}
+
+
+@media (min-width: 992px) { 
+    .position-header-text {
+    position: absolute;
+    right:80px;
+   }
+  
+} 
+
+/*  第十節講座102最後補充及作業說明  頁首頁尾置頂及置底 */
+.main {
+    min-height: calc(100vh - (49px + 49px + 42px + 14px))
+ /* 最小高度不會低於Calc的數值，calc 做計算navbar+footer+margin top + footer本身文字大小 */
+}
+
+
+/* footer input area */
+.form-area .form-input{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border:none;
+    outline:none;
+    background-color: transparent;
+   
+}
+
+.form-email{
+    position:absolute;
+    top:0px;
+    left:0px;
+    padding:22px;
+}
+
+.form-btn{
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding:17px;
+}
+
+.form-area{
+    padding-left: 60px;
+    position: relative;
+}
+
+.footer-list{
+    list-style: none;
+    padding-left: 0px;
+}
+
+
+
+
+
+
+
