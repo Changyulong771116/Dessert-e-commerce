@@ -16711,7 +16711,7 @@ a.text-tea:hover, a.text-tea:focus {
   width: 25px;
 }
 
-.list-group {
+.list-column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -16727,10 +16727,5 @@ a.text-tea:hover, a.text-tea:focus {
 .list-border {
   border: 1px solid #EAF0ED;
   background-color: #fff !important;
-}
-
-.product-list-padding {
-  padding-right: -15px;
-  padding-left: -15px;
 }
 /*# sourceMappingURL=all.css.map */
