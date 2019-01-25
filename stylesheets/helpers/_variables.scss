@@ -82,7 +82,7 @@ $theme-colors: map-merge(
     "primary":    $primary,
     "accent":     #FFE180,
     "Matcha":     #3F5D45,
-    "milk":      #EAF0ED,
+    "milk":       #EAF0ED,
     "tea":        #8DA291,
     "secondary":  $secondary,
     "success":    $success,
@@ -265,7 +265,7 @@ $grid-gutter-width:           30px !default;
 $line-height-lg:              1.5 !default;
 $line-height-sm:              1.5 !default;
 
-$border-width:                1px !default;
+$border-width:                0px; //1px !default; 
 $border-color:                $gray-300 !default;
 
 $border-radius:               .25rem !default; //rounded-0 直角
@@ -1003,7 +1003,7 @@ $list-group-item-padding-x:         1.25rem !default;
 $list-group-hover-bg:               $gray-100 !default;
 $list-group-active-color:           $component-active-color !default;
 $list-group-active-bg:              $component-active-bg !default;
-$list-group-active-border-color:    $list-group-active-bg !default;
+$list-group-active-border-color:    transparent !default; //$list-group-active-bg !default;  取消點擊後顏色
 
 $list-group-disabled-color:         $gray-600 !default;
 $list-group-disabled-bg:            $list-group-bg !default;

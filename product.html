@@ -49,11 +49,11 @@
                 </a>
                 <div class="collapse navbar-collapse text-tea font-weight-bold" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mt-2 mt-lg-0 position-header-text pr-5">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="product.html">甜點</a>
+                            <a class="nav-link" href="index.html">首頁 </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="product.html">甜點 <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">登入</a>
@@ -70,7 +70,159 @@
 
     <!-- 主要內容篇及區塊 -->
     <main class="main">
-        
+        <div class="container px-0 px-md-3">
+            <header class="index-header">
+                    <h1 class="text-hide">甜品電商</h1>
+                <div class="index-header-image bg-cover" style="background-image:url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80)">
+                </div>
+                
+            </header>
+        </div>
+        <!-- // product-list Area set up -->
+        <section class="product-list my-md-12 my-0">
+            <div class="container px-0 px-md-3">
+                <div class="row no-gutters">
+                    <div class="col-12 col-md-3">
+                        <div class="list-group text-center" id="list-tab" role="tablist">
+                            <div class="list-group-item list-group-item-action text-milk bg-Matcha product-line-hight">甜點類別</div>
+                            <a class="list-border list-group-item list-group-item-action active text-Matcha product-line-hight bg-milk"
+                                id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">所有甜點
+                                （48）</a>
+                            <a class="list-border list-group-item list-group-item-action text-Matcha product-line-hight bg-milk"
+                                id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">本日精選
+                                （10）</a>
+                            <a class="list-border list-group-item list-group-item-action text-Matcha product-line-hight bg-milk"
+                                id="list-messages-list" data-toggle="list" href="#list-messages" role="tab"
+                                aria-controls="messages">人氣推薦 （26）</a>
+                            <a class="list-border list-group-item list-group-item-action text-Matcha product-line-hight bg-milk "
+                                id="list-settings-list" data-toggle="list" href="#list-settings" role="tab"
+                                aria-controls="settings">新品上市 （12）</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                <div class="container px-0">
+                                    <div class="row px-6 px-md-0">
+                                        <div class="col-md pl-md-8 col-12 pt-6 pt-md-0">
+                                            <div class="card">
+                                                <div class="purchase-list-img bg-cover" style="background-image:url(https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)">
+                                                    <div class="list-card-icon text-Matcha">
+                                                        <img src="images/heart-o.png" class="heart-size text-Matcha" id="caocao_pic"
+                                                            onClick="change_pic()">
+                                                    </div>
+                                                    <div class="text-straight text-milk bg-Matcha">本日精選</div>
+                                                </div>
+                                                <div class="text-center text-Matcha d-flex">
+                                                    <div class="list-card-body col py-3">焦糖馬卡龍</div>
+                                                    <strong class="list-card-body font-weight-bold col py-3">NT$ 450</strong>
+                                                </div>
+                                                <a href="#" class="btn btn-milk text-Matcha py-3 list-card-body">加入購物車</a>
+                                            </div>
+                                            <div class="card my-4">
+                                                <div class="purchase-list-img bg-cover" style="background-image:url(https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)">
+                                                    <div class="list-card-icon text-Matcha">
+                                                        <img src="images/heart-o.png" class="heart-size text-Matcha" id="caocao_pic3"
+                                                            onClick="change_pic3()">
+                                                    </div>
+                                                    <div class="text-straight text-milk bg-Matcha">本日精選</div>
+                                                </div>
+                                                <div class="text-center text-Matcha d-flex">
+                                                    <div class="list-card-body col py-3">焦糖馬卡龍</div>
+                                                    <strong class="list-card-body font-weight-bold col py-3">NT$ 450</strong>
+                                                </div>
+                                                <a href="#" class="btn btn-milk text-Matcha py-3 list-card-body">加入購物車</a>
+                                            </div>
+                                            <div class="card">
+                                                <div class="purchase-list-img bg-cover" style="background-image:url(https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)">
+                                                    <div class="list-card-icon text-Matcha">
+                                                        <img src="images/heart-o.png" class="heart-size text-Matcha" id="caocao_pic4"
+                                                            onClick="change_pic4()">
+                                                    </div>
+                                                    <div class="text-straight text-milk bg-Matcha">本日精選</div>
+                                                </div>
+                                                <div class="text-center text-Matcha d-flex">
+                                                    <div class="list-card-body col py-3">焦糖馬卡龍</div>
+                                                    <strong class="list-card-body font-weight-bold col py-3">NT$ 450</strong>
+                                                </div>
+                                                <a href="#" class="btn btn-milk text-Matcha py-3 list-card-body">加入購物車</a>
+                                            </div>
+                                        </div>
+                                        <div class="col d-none d-md-block">
+                                            <div class="card">
+                                                <div class="purchase-list-img bg-cover" style="background-image:url(https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)">
+                                                    <div class="list-card-icon text-Matcha">
+                                                        <img src="images/heart-o.png" class="heart-size text-Matcha" id="caocao_pic2"
+                                                            onClick="change_pic2()">
+                                                    </div>
+                                                    <div class="text-straight text-milk bg-Matcha">本日精選</div>
+                                                </div>
+                                                <div class="text-center text-Matcha d-flex">
+                                                    <div class="list-card-body col py-3">焦糖馬卡龍</div>
+                                                    <strong class="list-card-body font-weight-bold col py-3">NT$ 450</strong>
+                                                </div>
+                                                <a href="#" class="btn btn-milk text-Matcha py-3 list-card-body">加入購物車</a>
+                                            </div>
+                                            <div class="card my-4">
+                                                <div class="purchase-list-img bg-cover" style="background-image:url(https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)">
+                                                    <div class="list-card-icon text-Matcha">
+                                                        <img src="images/heart-o.png" class="heart-size text-Matcha" id="caocao_pic5"
+                                                            onClick="change_pic5()">
+                                                    </div>
+                                                    <div class="text-straight text-milk bg-Matcha">本日精選</div>
+                                                </div>
+                                                <div class="text-center text-Matcha d-flex">
+                                                    <div class="list-card-body col py-3">焦糖馬卡龍</div>
+                                                    <strong class="list-card-body font-weight-bold col py-3">NT$ 450</strong>
+                                                </div>
+                                                <a href="#" class="btn btn-milk text-Matcha py-3 list-card-body">加入購物車</a>
+                                            </div>
+                                            <div class="card">
+                                                <div class="purchase-list-img bg-cover" style="background-image:url(https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)">
+                                                    <div class="list-card-icon text-Matcha">
+                                                        <img src="images/heart-o.png" class="heart-size text-Matcha" id="caocao_pic6"
+                                                            onClick="change_pic6()">
+                                                    </div>
+                                                    <div class="text-straight text-milk bg-Matcha">本日精選</div>
+                                                </div>
+                                                <div class="text-center text-Matcha d-flex">
+                                                    <div class="list-card-body col py-3">焦糖馬卡龍</div>
+                                                    <strong class="list-card-body font-weight-bold col py-3">NT$ 450</strong>
+                                                </div>
+                                                <a href="#" class="btn btn-milk text-Matcha py-3 list-card-body">加入購物車</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">我是第二頁</div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">我是第三頁</div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">我是第四頁</div>
+                        <div class="d-flex justify-content-end text-Matcha">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <section class="py-5 bg-Matcha">
@@ -129,6 +281,57 @@
                 $("#nav a").eq($(this).index()).addClass("navdown").siblings().removeClass("navdown");
             })
         })
+    </script>
+    <!--  Purchase list heart set up -->
+    <script>
+        function change_pic() {
+            var imgObj = document.getElementById("caocao_pic");
+            if (imgObj.getAttribute("src", 2) == "images/heart-o.png") {
+                imgObj.src = "images/heart.png";
+            } else {
+                imgObj.src = "images/heart-o.png";
+            }
+        }
+        function change_pic2() {
+            var imgObj = document.getElementById("caocao_pic2");
+            if (imgObj.getAttribute("src", 2) == "images/heart-o.png") {
+                imgObj.src = "images/heart.png";
+            } else {
+                imgObj.src = "images/heart-o.png";
+            }
+        }
+        function change_pic3() {
+            var imgObj = document.getElementById("caocao_pic3");
+            if (imgObj.getAttribute("src", 2) == "images/heart-o.png") {
+                imgObj.src = "images/heart.png";
+            } else {
+                imgObj.src = "images/heart-o.png";
+            }
+        }
+        function change_pic4() {
+            var imgObj = document.getElementById("caocao_pic4");
+            if (imgObj.getAttribute("src", 2) == "images/heart-o.png") {
+                imgObj.src = "images/heart.png";
+            } else {
+                imgObj.src = "images/heart-o.png";
+            }
+        }
+        function change_pic5() {
+            var imgObj = document.getElementById("caocao_pic5");
+            if (imgObj.getAttribute("src", 2) == "images/heart-o.png") {
+                imgObj.src = "images/heart.png";
+            } else {
+                imgObj.src = "images/heart-o.png";
+            }
+        }
+        function change_pic6() {
+            var imgObj = document.getElementById("caocao_pic6");
+            if (imgObj.getAttribute("src", 2) == "images/heart-o.png") {
+                imgObj.src = "images/heart.png";
+            } else {
+                imgObj.src = "images/heart-o.png";
+            }
+        }
     </script>
 </body>
 
