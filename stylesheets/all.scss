@@ -12,9 +12,13 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 // 如果結果初步來請看Ctrl + ` 請看output
 
+
 // 自訂元件
 @import "./components/layout";
 @import "./components/header";
 @import "./components/Introducing-food";
 @import "./components/Purchase-list";
-@import "./components/product-list"
+@import "./components/product-list";
+@import "./components/login";
+
+

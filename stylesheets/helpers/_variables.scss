@@ -195,7 +195,7 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                              theme-color("primary") !default;
+$link-color:                              theme-color("tea") !default;  //theme-color("primary") !default;
 $link-decoration:                         none !default;
 $link-hover-color:                        darken($link-color, 15%) !default;
 $link-hover-decoration:                   underline !default;
@@ -279,7 +279,7 @@ $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
 $component-active-color:      $white !default;
-$component-active-bg:         theme-color("primary") !default;
+$component-active-bg:         theme-color("tea") !default; //theme-color("primary") !default; 修改按鈕按下後預設滯留框框。
 
 $caret-width:                 .3em !default;
 
@@ -323,6 +323,7 @@ $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
+$h7-font-size:                $font-size-base * 2.25 !default; // 36px
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
@@ -551,7 +552,7 @@ $custom-control-indicator-size:         1rem !default;
 $custom-control-indicator-bg:           $input-bg !default;
 
 $custom-control-indicator-bg-size:      50% 50% !default;
-$custom-control-indicator-box-shadow:   $input-box-shadow !default;
+$custom-control-indicator-box-shadow:   inset 0 .25rem .25rem rgba($black, .1) !default; //$input-box-shadow !default;
 $custom-control-indicator-border-color: $gray-500 !default;
 $custom-control-indicator-border-width: $input-border-width !default;
 

@@ -49,14 +49,14 @@
                 </a>
                 <div class="collapse navbar-collapse text-tea font-weight-bold" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mt-2 mt-lg-0 position-header-text pr-5">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">首頁</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="product.html">甜點</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">登入</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="login.html">登入 <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                 </div>
@@ -69,24 +69,100 @@
     </header>
 
     <!-- 主要內容篇及區塊 -->
-    <main class="main">
-        
+    <main>
+        <div class="container px-0">
+            <div class="row d-flex justify-content-center no-gutters">
+                <div class="col-md-10 no-gutters d-md-flex pt-12 pb-lg-12">
+                    <div class="col-lg-6 bg-Matcha no-gutters img-Crossing-block-login">
+                        <!-- use _Introducing-food.scss .img-Crossing-block method -->
+                        <h1 class="text-milk font-weight-bold text-center py-7">會員登入</h1>
+                        <div class="row no-gutters pt-3 d-lg-none bg-milk py-6 mb-6 d-flex justify-content-center">
+                            <div class="col-3">
+                                <button class="btn btn-brand-lint bnt-lg w-100 bg-light h-100"><img
+                                        src="images/ic-facebook-logotype.svg" class="img-fluid" width="108"
+                                        alt=""></button>
+                            </div>
+                            <div class="col-3 border-community-account-login">
+                                <button class="btn btn-brand-lint bnt-lg w-100 bg-light"><img
+                                        src="images/ic-google.svg" class="img-fluid" width="108" alt=""></button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-brand-lint bnt-lg w-100 bg-light h-100"><img
+                                        src="images/ic-yahoo.svg" class="img-fluid" width="108" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="mb-md-2 mb-lg-0">
+                            <form class="pr-4 pl-4">
+                                <div
+                                    class="form-group mw-100 form-area-login d-flex justify-content-between justify-content-center">
+                                    <label for="exampleInputtext1"><i class="fa fa-user form-input-login fa-lg bg-milk"
+                                            aria-hidden="true"></i></label>
+                                    <input type="text" class="form-control bg-milk form-input" id="exampleInputtext1"
+                                        aria-describedby="textHelp" placeholder="電子信箱/手機號碼">
+                                </div>
+                                <div class="form-group mw-100 form-area-login d-flex">
+                                    <label for="exampleInputPassword1"><i
+                                            class="fa fa-key form-input-login fa-lg bg-milk"
+                                            aria-hidden="true"></i></label>
+                                    <input type="password" class="form-control bg-milk form-input"
+                                        id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="remember">
+                                    <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+                                    <label class="form-check-label text-milk" for="remember">記住我</label>
+                                </div>
+
+                            </form>
+                            <button type="submit"
+                                class="btn btn-accent w-100 py-4 mt-4 btn-lg font-weight-bold">登入帳號</button>
+
+                        </div>
+                    </div>
+                    <!-- Community account -->
+                    <div class="col-md-6 bg-milk d-lg-block d-none">
+                        <div class="bg-primary-lighter p-5">
+                            <h4 class="text-tea py-2 text-center">—— 連結社群帳號 ——</h4>
+                            <div class="row no-gutters pt-3">
+                                <div class="col-12 pb-3">
+                                    <button class="btn btn-brand-lint bnt-lg w-100 bg-light py-4"><img
+                                            src="images/ic-facebook-logotype.svg" class="img-fluid" width="120"
+                                            alt=""></button>
+                                </div>
+                                <div class="col-12 pb-3">
+                                    <button class="btn btn-brand-lint bnt-lg w-100 bg-light py-4"><img
+                                            src="images/ic-google.svg" class="img-fluid" width="108" alt=""></button>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-brand-lint bnt-lg w-100 bg-light py-4"><img
+                                            src="images/ic-yahoo.svg" class="img-fluid" width="108" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <section class="py-5 bg-Matcha">
         <div class="container">
             <div class="row d-flex row justify-content-center">
-                <div class="col-md-5 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0">
+                <div
+                    class="col-md-5 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0">
                     <img src="images/logo-light.svg" height="40" alt="">
                     <span class="mx-3 h4 mb-0 pb-0 text-milk">訂閱你我的甜蜜郵件</span>
                 </div>
                 <div class="col-md-5 d-flex justify-content-between">
                     <div class="input-group form-area form-area-jum bg-milk">
-                        <label for="subscription"><i class="fa fa-envelope form-email fa-lg bg-milk text-Matcha"></i></label>
+                        <label for="subscription"><i
+                                class="fa fa-envelope form-email fa-lg bg-milk text-Matcha"></i></label>
                         <input type="email" class="form-input form-control w-100" aria-label="Recipient's username"
                             aria-describedby="basic-addon2" id="subscription">
-                        <button class="btn btn-accent form-btn" type="button"><i class="fa fa-arrow-right fa-lg text-Matcha"
-                                aria-hidden="true"></i></button>
+                        <button class="btn btn-accent form-btn" type="button"><i
+                                class="fa fa-arrow-right fa-lg text-Matcha" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>

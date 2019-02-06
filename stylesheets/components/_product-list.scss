@@ -1,0 +1,59 @@
+// product-list Area set up
+.list-column {
+    flex-direction: column;
+}
+
+$basePX:10px;
+
+@function padding($count:1){
+    @return $basePX * $count
+}
+
+.product-line-hight {
+    padding:padding(1.5) 0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.list-border{
+    border:1px solid #EAF0ED;
+    background-color: #fff !important;
+}
+
+// .page-item {
+//     // pointer-events:none !important;
+//     border-color: transparent !important;
+// }
+
+// .page-link:focus,
+
+// .page-link:active:focus,
+
+// .page-link.active:focus,
+
+// .page-link.focus,
+
+// .page-link:active.focus,
+
+// .page-link.active.focus {
+
+//     outline: none !important;
+    
+//     border-color: transparent !important;
+
+//     pointer-events:none !important;
+    
+//     }
+
+
+.page-link {
+    border:1px solid #EAF0ED;
+}
+
+.page-item.active .page-link{
+    border-color: transparent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+

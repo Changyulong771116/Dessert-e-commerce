@@ -1,0 +1,64 @@
+// purchase-list set up
+@mixin bg-cover {
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-cover{
+    @include bg-cover;
+   }
+
+.purchase-list-img{
+    height: 315px;
+}
+
+.list-card-body{
+    border: 1px solid #EAF0ED;
+    font-size: 20px;
+}
+
+@mixin text-straight{
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+   
+}
+
+.card{
+    position: relative;
+}
+
+$basePX:10px;
+
+@function padding($count:1){
+    @return $basePX * $count
+}
+
+.text-straight{
+    @include text-straight;
+    padding:padding(1);
+    letter-spacing: 5px;
+    position:absolute;
+    top: 0;
+    left: 20px;
+}
+
+.list-card-icon{
+    position:absolute;
+    top: 12px;
+    right: 22px;
+    z-index: 2;
+    font-size: 20px;
+}
+
+.list-card-icon:focus{
+    background-color: #ffffff;
+}
+
+.heart-size{
+    width: 25px;
+}
+
+
+
+
+
