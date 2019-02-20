@@ -6,22 +6,9 @@ $basePX:10px;
     @return $basePX * $count
 }
 
-
-
-@mixin intro-food-img{
-    width: 460px;
-    height: 460px;
-}
-
 @mixin img-Crossing-block {
     margin-top: - padding(2);
     margin-bottom: - padding(2);
-}
-
-
-
-.intro-food-img{
-    @include intro-food-img;
 }
 
 @media(min-width: 768px){
@@ -29,6 +16,17 @@ $basePX:10px;
      @include img-Crossing-block
     }  
 }
+
+@mixin intro-food-img{
+    width: 460px;
+    height: 460px;
+}
+
+.intro-food-img{
+    @include intro-food-img;
+}
+
+
 
 // text-straight use @mixin method.
 
